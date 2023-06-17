@@ -22,6 +22,6 @@ if st.button("Calculate Interest"):
         st.error("End date should be after start date.")
     else:
         interest = calculate_interest(principal, start_date, end_date)
-        st.write(f'The compound interest for the given period is: Rs. :blue {np.round(interest, 2)}')
+        st.write(f'The compound interest for the given period is: Rs. :blue[{np.round(interest, 2)}]')
         
-        st.write(f'Total money owed Rs. :blue {np.round(principal + interest, 2)}')
+        st.write(f'Total money owed Rs. :blue[{np.round(principal + interest, 2)}]')
